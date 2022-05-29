@@ -1,9 +1,24 @@
-body {
-  background-color: #e1e1e1;
+html {
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Nav Styles */
 .img {
   width: 100%;
 }
@@ -19,12 +34,12 @@ body {
 
 .nav__item {
   margin: 3px;
-  width: 100%;
-  background-color: #ffffff;
   padding: 15px;
   text-align: center;
+  font-weight: bold;
 }
 
+/* Hero Styles */
 .hero {
   display: flex;
   flex-direction: column-reverse;
@@ -32,4 +47,9 @@ body {
 
 .hero > div {
   padding: 1rem;
+}
+
+.hero > p {
+  padding: 1rem;
+  text-align: center;
 }
