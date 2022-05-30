@@ -4,6 +4,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
 }
 body {
   padding: 0;
@@ -192,6 +194,12 @@ h1 {
   text-decoration: none;
   color: #000000;
 }
+.footerNav__list {
+  display: none;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
 
 @media (min-width: 768px) {
   .footer__linkContainer > p {
@@ -200,5 +208,12 @@ h1 {
 
   .footer {
     padding-bottom: 2rem;
+  }
+
+  .footerNav__list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
